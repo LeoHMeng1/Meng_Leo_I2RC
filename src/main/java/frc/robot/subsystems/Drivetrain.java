@@ -13,6 +13,7 @@ import edu.wpi.first.networktables.GenericEntry;
 import edu.wpi.first.wpilibj.SPI;
 import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
 import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
@@ -58,6 +59,9 @@ public class Drivetrain extends SubsystemBase {
   @Override
   public void periodic() {
     // This method will be called once per scheduler run
+    SmartDashboard.putNumber("Left Voltage", leftDriveTalon.getMotorOutputPercent());
+    SmartDashboard.putNumber("Right Voltage", rightDriveTalon.getMotorOutputPercent());
+    SmartDashboard.putNumber("Angle", navx.getAngle());
   }
 
   @Override
