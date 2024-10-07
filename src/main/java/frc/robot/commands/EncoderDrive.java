@@ -43,8 +43,6 @@ public class EncoderDrive extends Command {
     if(drivetrain.getMeters() >= setpoint){
       return true;
     }
-    else{
-      return false;
-    }
+    else return false;
   }
 }
