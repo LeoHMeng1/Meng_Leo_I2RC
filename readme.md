@@ -7,7 +7,6 @@ Week: **6**
 
 
 ## Code
-
 The main topic this week was: **PID Controller**
 
 Commands: **PID Controller**
