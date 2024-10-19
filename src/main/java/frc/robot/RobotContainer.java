@@ -28,6 +28,7 @@ public class RobotContainer {
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
+    dt.setDefaultCommand(pid);
     // Configure the trigger bindings
     configureBindings();
   }
@@ -50,7 +51,7 @@ public class RobotContainer {
    *
    * @return the command to run in autonomous
    */
-  public Command getAutonomousCommand() {
+    public Command getAutonomousCommand() {
     // An example command will be run in autonomous
     return pid;
   }
