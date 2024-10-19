@@ -49,7 +49,7 @@ public class Drivetrain extends SubsystemBase {
   }
 
   public double getAngle(){
-    return navx.getAngle();
+    return -navx.getAngle();
   }
 
   public void reset(){
