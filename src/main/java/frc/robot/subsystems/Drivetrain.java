@@ -19,8 +19,8 @@ import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class Drivetrain extends SubsystemBase {
-  private static final int LeftDriveTalonPort = 0;
-  private static final int RightDriveTalonPort = 0;
+  private static final int LeftDriveTalonPort = 2;
+  private static final int RightDriveTalonPort = 3;
   private final WPI_TalonSRX leftDriveTalon;
   private final WPI_TalonSRX rightDriveTalon;
   private final AHRS navx = new AHRS(SPI.Port.kMXP);
@@ -50,7 +50,7 @@ public class Drivetrain extends SubsystemBase {
   }
 
   public double getAngle(){
-    return navx.getAngle();
+    return -navx.getAngle();
   }
 
   public void reset(){

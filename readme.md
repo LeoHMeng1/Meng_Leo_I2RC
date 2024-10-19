@@ -3,19 +3,18 @@ Name: **Leo Meng**
 
 Section: **I2RC**
 
-Week: **[INSERT WEEK NUM HERE]**
+Week: **6**
 
 
 ## Code
+The main topic this week was: **PID Controller**
 
-The main topic this week was: **Encoder**
-
-Commands: **resetEncoders() and getMeters()**
+Commands: **PID Controller**
 
 Subsystems: **Drivetrain**
 
 ### How does the code work?
-We use functions to get how many ticks we have travelled. We then convert this to meters. We also created some objects for the gyroscope and created functions to reset them, read their values, etc.
+We use functions to use PID to effectively turn a robot 
 
 
 ### Important notes for future reference
